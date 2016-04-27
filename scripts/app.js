@@ -4,7 +4,7 @@
 $(function(){
    $("h2").text("jQuery Testsss!!!");
 
-    $("p:first").text($("p:first").text() + " - Added Value");
+    $("p:first").text($("p:first").text() + " - Added Value!");
 
     $("#btn1").click(function(){
         $("ul li:first").hide();
