@@ -2,9 +2,10 @@
  * Created by flangloi on 2016-04-27.
  */
 $(function(){
-   $("h2").text("jQuery Testsss!!!");
+    $("h2").text("jQuery Testsss!!!");
 
-    $("p:first").text($("p:first").text() + " - Added Value!");
+    var pElement_first = $("p:first");
+    pElement_first.text(pElement_first.text() + " - Added Value!");
 
     $("p").on({
         mouseenter: function(){
@@ -17,28 +18,38 @@ $(function(){
             $(this).css("background-color", "yellow");
         }
     });
-
-    $("input").focus(function(){
+    var inputElement = $("input");
+    inputElement.focus(function(){
         $(this).css("background-color", "#cccccc");
     });
 
-    $("input").blur(function(){
+    inputElement.blur(function(){
         $(this).css("background-color", "#ffffff");
     });
 
+    var button1=$("#btn1");
+    var button2=$("#btn2");
+    var button3=$("#btn3");
 
-    $("#btn1").click(function(){
+    button1.click(function(){
         //$("ul li:first").hide();
         //$("ul li:first").hide(1000);  // milliseconds
         //$("ul li:first").hide("slow");
         $("ul li:first").hide("fast");
     });
 
-    $("#btn2").click(function(){
+    $("#btn9").click(function(){
+        $("ul li:first").hide("slow", function(){
+            alert("First ul li element is now hidden!");
+        });
+    });
+
+    button2.click(function(){
         $("ul li:first-child").hide();
     });
 
-    $("#btn3").click(function(){
+
+    button3.click(function(){
         $("[href]").hide();
     });
 
@@ -71,22 +82,22 @@ $(function(){
     });
 
 
-    $("#btn1").hover(function(){
+    button1.hover(function(){
         $("#divMessage").text("You entered btn2 Arial space!");
     },
         function(){
             $("#divMessage").text("");
         });
 
-    $("#btn2").mouseenter(function(){
+    button2.mouseenter(function(){
         $("#divMessage").text("You entered btn2 Arial space!");
     });
 
-    $("#btn2").mouseleave(function(){
+    button2.mouseleave(function(){
         $("#divMessage").text("");
     });
 
-    $("#btn3").mouseover(function(){
+    button3.mouseover(function(){
         //alert("You entered btn3 Arial space!");
     });
 

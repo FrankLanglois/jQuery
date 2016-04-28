@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <title></title>
     <script src="scripts/jquery-2.2.3.js"></script>
-    <style>
-        #panel, .flip {
-            padding: 5px;
-            margin: 10px;
-            text-align: center;
-            background-color: #e5eecc;
-            border: solid 1px #c3c3c3;
-            width: 200px;
-        }
-
-        #panel {
-            padding: 50px;
-            display: none;
-            width: 500px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/app.css" type="text/css"/>
 </head>
 <body>
+<div class="mainContainer">
+    <h2>jquery Tests 2!</h2>
+    <hr/>
+    <div id="flip1" class="flip">Slide Down panel</div>
+    <div id="flip2" class="flip">Slide Up panel</div>
+    <div id="flip3" class="flip">Slide Toggle panel</div>
+    <div id="flip4" class="flip">Slide Stop</div>
+    <div id="panel">Hello world!</div>
 
-<div id="flip1" class="flip">Slide Down panel</div>
-<div id="flip2" class="flip">Slide Up panel</div>
-<div id="flip3" class="flip">Slide Toggle panel</div>
-<div id="panel">Hello world!</div>
 
+
+    <div id="div1" style="background:#98bf21;height:75px;width:75px;position:relative;">HELLO</div>
+
+    <div>
+        <button id="btn1">Animate</button>
+        <button id="btn2">Animate Many Params</button>
+        <button id="btn3">Animate Relative Values</button>
+        <button id="btn4">Animate Pre-defined Values</button>
+
+    </div>
+    <div>
+        <button id="btn5">Animate Queue Functionality</button>
+        <button id="btn6">Animate Big Text Effect</button>
+        <button id="btn7">Chaining</button>
+    </div>
+</div>
 
 <script src="scripts/app2.js"></script>
 </body>

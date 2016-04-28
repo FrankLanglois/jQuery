@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <title></title>
     <script src="scripts/jquery-2.2.3.js"></script>
+    <link rel="stylesheet" href="css/app.css" type="text/css"/>
 </head>
 <body>
+<div class="mainContainer">
     <h2>jquery</h2>
     <hr/>
-    <p>List 1:</p>
+    <p class="listTitle">List 1:</p>
     <ul>
         <li>Coffee</li>
         <li>Milk</li>
         <li>Tea</li>
     </ul>
     <div id="list2">
-        <p>List 2:</p>
+        <p class="listTitle">List 2:</p>
         <ul>
             <li>Coffee</li>
             <li>Milk</li>
@@ -23,34 +25,35 @@
         </ul>
     </div>
     <div>
-    <input type="text" />
+        <label for="input1" style="margin-left: 10px;">Text:</label>
+        <input id="input1" type="text"/>
     </div>
-    <br/><br/>
-    <div style="display: inline-block">
-        <div id="div1" style="width:40px;height:40px;display:none;background-color:red;"></div><br>
-        <div id="div2" style="width:40px;height:40px;display:none;background-color:green;"></div><br>
-        <div id="div3" style="width:40px;height:40px;display:none;background-color:blue;"></div>
+
+    <div style="overflow:hidden;">
+        <div id="div1" style="width:40px;height:40px;float:left;display:none;background-color:red;"></div>
+        <div id="div2" style="width:40px;height:40px;float:left;display:none;background-color:green;"></div>
+        <div id="div3" style="width:40px;height:40px;float:left;display:none;background-color:blue;"></div>
     </div>
-    <br/><br/>
+
     <div>
         <a href="http://www.w3schools.com/html/">HTML Tutorial</a>
         <a href="http://www.w3schools.com/css/">CSS Tutorial</a>
     </div>
-    <br/><br/>
-    <button id="btn1">Hide First</button>
-    <button id="btn2">Hide First-Child</button>
-    <button id="btn3">Hide Attribute href</button>
+    <div>
+        <button id="btn1">Hide First</button>
+        <button id="btn9">Hide First with Callback</button>
+        <button id="btn2">Hide First-Child</button>
+        <button id="btn3">Hide Attribute href</button>
+        <button id="btn4">Toggle List 2</button>
+        <button id="btn5">Fade in boxes</button>
+        <button id="btn6">Fade out boxes</button>
+        <button id="btn7">Fade Toggle boxes</button>
+        <button id="btn8">Fade To boxes</button>
+    </div>
 
-    <br/><br/>
-    <button id="btn4">Toggle List 2</button>
-    <button id="btn5">Fade in boxes</button>
-    <button id="btn6">Fade out boxes</button>
-    <br/><br/>
-    <button id="btn7">Fade Toggle boxes</button>
-    <button id="btn8">Fade To boxes</button>
-    <br><br>
     <div id="divMessage"></div>
 
     <script src="scripts/app.js"></script>
+</div>
 </body>
 </html>

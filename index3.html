@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="scripts/jquery-2.2.3.js"></script>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+<div class="mainContainer">
+    <h2>jQuery Tests 3!</h2>
+
+    <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+    <p id="test3">This is some text in a paragraph.</p>
+    <p>Name: <input type="text" id="test2" value="Mickey Mouse"></p>
+
+    <p><a href="http://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+    <div  style="white-space: nowrap;">
+        <div class="getSetSection">
+            <p style="text-decoration: underline;">GET Section</p>
+
+            <p>
+                Data: <input id="input1" type="text" style="width: 75%;"/>
+            </p>
+
+            <div>
+                <button id="btn1">Get Text</button>
+                <button id="btn2">Get HTML</button>
+                <button id="btn3">Get Val</button>
+                <button id="btn4">Get Attribute Href</button>
+            </div>
+        </div>
+        <div class="getSetSection">
+            <p style="text-decoration: underline;">SET Section</p>
+
+            <div>
+                <button id="btn5">Set text</button>
+                <button id="btn6">Set html</button>
+                <button id="btn7">Set Val</button>
+                <button id="btn8">Set A and Href</button>
+            </div>
+        </div>
+    </div>
+    <div >
+        <div class="getSetSection">
+            <p style="text-decoration: underline;">ADD Section</p>
+            <p id="test4">Just Saying </p>
+            <div>
+                <button id="btn10">Append</button>
+                <button id="btn14" onclick="appendText()">Append Elements</button>
+                <button id="btn11">Prepend</button>
+                <button id="btn12">After</button>
+                <button id="btn13">Before</button>
+            </div>
+        </div>
+        <div id="removeSection" class="getSetSection">
+            <p id="removeTitle" style="text-decoration: underline;">REMOVE Section</p>
+            <div id="test5" class="test5">
+                <p id="p6" class="testA">Bla bla bla bla </p>
+                <p id="p7" class="testB">Too much talking! </p>
+            </div>
+
+            <div>
+                <button id="btn21">Empty</button>
+                <button id="btn20">Remove</button>
+                <button id="btn23">Remove P1</button>
+                <button id="btn24">Remove all p elements</button>
+                <button id="btn22">Restore</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/app3.js"></script>
+</body>
+</html>
