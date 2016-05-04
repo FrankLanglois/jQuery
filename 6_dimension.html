@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <title></title>
     <script src="scripts/jquery-2.2.3.js"></script>
-    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="content/css/app.css"/>
 </head>
-<body>
+<body style="height: 50%;width: 50%;">
+
 <div id="div4"></div>
+<div id="div1" style="border: solid black 1px;width: 350px; padding:0 5px;">
+    <p>Div original dimensions:</p>
+    <p class="marginLeft">Width = 400px -----  Height = 150px</p>
+    <p class="marginLeft">Padding = 10px ----- Border = 2px solid blue</p>
+    <p class="marginLeft">Margin = 5px</p>
+</div>
 <br>
 
-<button>Display dimensions of div</button>
-
-<p>width() - returns the width of an element.</p>
-<p>height() - returns the height of an element.</p>
+<button id="btn1">Display Dimensions</button>
+<button id="btn2">Display Inner Dimensions</button>
+<button id="btn3">Display Outer Dimensions</button>
+<button id="btn4">Display Outer Dimensions (true)</button>
+<button id="btn5">Alert Document and Window Dimensions</button>
+<button id="btn6">Set Div Dimensions</button>
+<button id="btn7">Reset</button>
+<p></p>
 
 <script src="scripts/app6.js"></script>
 </body>

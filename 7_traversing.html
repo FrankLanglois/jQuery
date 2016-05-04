@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="scripts/jquery-2.2.3.js"></script>
+    <link rel="stylesheet" href="content/css/app.css"/>
+    <link rel="stylesheet" href="content/bootstrap-3.3.6-dist/css/bootstrap.css"/>
+</head>
+<body>
+<div class="ancestors">
+    <div style="width:500px;">div (great-grandparent)
+        <ul>ul (grandparent)
+            <li>li (direct parent)
+                <aside>aside</aside>
+            </li>
+        </ul>
+    </div>
+
+    <div style="width:500px;">div (grandparent)
+        <p class="first">p (direct parent)
+            <aside class="span">aside</aside>
+        </p>
+    </div>
+</div>
+<section>
+    <input id="input1" type="text" class="input1" ></input>
+</section>
+<section id="div1">
+    <bouton id="btn1" class="btn btn-default marginLeft"  >Aside Direct Parent</bouton>
+    <bouton id="btn2" class="btn btn-default marginLeft"  >Aside Parents</bouton>
+    <bouton id="btn3" class="btn btn-default marginLeft"  >Aside ul Parents</bouton>
+    <bouton id="btn4" class="btn btn-default marginLeft"  >Aside Parents Until</bouton>
+</section>
+<section id="div2">
+    <bouton id="btn5" class="btn btn-default marginLeft"  >Div Children</bouton>
+    <bouton id="btn6" class="btn btn-default marginLeft"  >Div Children p.first</bouton>
+
+    <bouton id="btn10" class="btn btn-default marginLeft"  >Reset</bouton>
+</section>
+
+<script src="scripts/app7.js"></script>
+</body>
+</html>
