@@ -18,7 +18,8 @@ $(function(){
     });
 
     $("#btn4").click(function(){
-        $("#p2").toggleClass("blue important");
+        $("#p1").toggleClass("blue");
+        $("#p2").toggleClass("important");
     });
 
 });
