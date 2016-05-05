@@ -23,6 +23,7 @@ input{
     color: grey;
     padding: 5px;
     margin: 15px;
+    width:700px;
 }
 
 .ancestors * {
@@ -68,6 +69,7 @@ input{
     border:solid 1px #000000;
     margin-left: 25px;
     padding:2px 5px;
+    font-weight: bold;
 }
 
 .listTitle{

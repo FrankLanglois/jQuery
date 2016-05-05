@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="content/bootstrap-3.3.6-dist/css/bootstrap.css"/>
 </head>
 <body>
-<div class="ancestors">
+<div class="ancestors">div(ancestors)
     <div style="width:500px;">div (great-grandparent)
         <ul>ul (grandparent)
             <li>li (direct parent)
                 <aside>aside</aside>
+                <label class="intro" for="">Label1</label>
             </li>
         </ul>
     </div>
@@ -20,25 +21,42 @@
     <div style="width:500px;">div (grandparent)
         <p class="first">p (direct parent)
             <aside class="span">aside</aside>
+            <label for="">Label2</label>
+            <label class="intro" for="">Label3</label>
         </p>
     </div>
 </div>
 <section>
-    <input id="input1" type="text" class="input1" ></input>
+    <input id="input1" type="text" class="input1"></input>
+    <bouton id="btn10" class="btn btn-default marginLeft">Reset</bouton>
 </section>
 <section id="div1">
-    <bouton id="btn1" class="btn btn-default marginLeft"  >Aside Direct Parent</bouton>
-    <bouton id="btn2" class="btn btn-default marginLeft"  >Aside Parents</bouton>
-    <bouton id="btn3" class="btn btn-default marginLeft"  >Aside ul Parents</bouton>
-    <bouton id="btn4" class="btn btn-default marginLeft"  >Aside Parents Until</bouton>
+    <bouton id="btn1" class="btn btn-default marginLeft">Aside Direct Parent</bouton>
+    <bouton id="btn2" class="btn btn-default marginLeft">Aside Parents</bouton>
+    <bouton id="btn3" class="btn btn-default marginLeft">Aside ul Parents</bouton>
+    <bouton id="btn4" class="btn btn-default marginLeft">Aside Parents Until</bouton>
+    <bouton id="btn5" class="btn btn-default marginLeft">Div Children</bouton>
+    <bouton id="btn6" class="btn btn-default marginLeft">Div Children p.first</bouton>
+    <bouton id="btn7" class="btn btn-default marginLeft">Find Aside Descendants of all Div</bouton>
+    <bouton id="btn8" class="btn btn-default marginLeft">Find All Descendants of all UL</bouton>
 </section>
 <section id="div2">
-    <bouton id="btn5" class="btn btn-default marginLeft"  >Div Children</bouton>
-    <bouton id="btn6" class="btn btn-default marginLeft"  >Div Children p.first</bouton>
-
-    <bouton id="btn10" class="btn btn-default marginLeft"  >Reset</bouton>
+    <bouton id="btn11" class="btn btn-default marginLeft">Siblings of Aside</bouton>
+    <bouton id="btn12" class="btn btn-default marginLeft">Aside Siblings of P</bouton>
+    <bouton id="btn13" class="btn btn-default marginLeft">Next Sibling of P</bouton>
+    <bouton id="btn14" class="btn btn-default marginLeft">All Next Siblings of P</bouton>
+    <bouton id="btn15" class="btn btn-default marginLeft">P Next Siblings Until P</bouton>
+    <bouton id="btn16" class="btn btn-default marginLeft">Prev Siblings of</bouton>
+    <bouton id="btn17" class="btn btn-default marginLeft">All Prev Siblings of P</bouton>
+    <bouton id="btn18" class="btn btn-default marginLeft">P Prev Siblings Until P</bouton>
 </section>
-
+<section id="div3">
+    <bouton id="btn20" class="btn btn-default marginLeft">First Label in First Div</bouton>
+    <bouton id="btn21" class="btn btn-default marginLeft">Last Lavel in Last Div</bouton>
+    <bouton id="btn22" class="btn btn-default marginLeft">Div EQ of 1</bouton>
+    <bouton id="btn23" class="btn btn-default marginLeft">Filter Label Class Intro</bouton>
+    <bouton id="btn24" class="btn btn-default marginLeft">Not</bouton>
+</section>
 <script src="scripts/app7.js"></script>
 </body>
 </html>
